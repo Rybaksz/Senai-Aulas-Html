@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tabelas De Faltas</title>
+</head>
+
+<body>
+    <h1>Tabelas De Faltas</h1>
+    <table border="2px">
+        <caption>Faltas Dos Alunos</caption>
+        <!-- Caption é o titulo da tabela -->
+        <thead>
+            <tr>
+                <!-- tr linha -->
+                <!-- td colunas -->
+                <!-- Th cabeçalho e td restante do conteudo -->
+                <th>Alunos</th>
+                <th>Faltas 1° Semestre</th>
+                <th>Faltas 2° Semestre</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Tbody é o corpo da tabela onde é insirido todas as informaçoes -->
+            <tr>
+                <td>Ana</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Marcos</td>
+                <td>20</td>
+                <td>15</td>
+            </tr>
+
+            <tr>
+                <td>Amanda</td>
+                <td colspan="2">
+                    <center>5</center>
+                </td>
+                <!-- <td colspan="2">5</td> Faz a informação inserida ocupar 2 colunas ou mais dependendo da informação dentro do "" -->
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">
+                    <center>Alunos da turma de Front-End</center>
+                </td>
+            </tr>
+
+        </tfoot>
+
+    </table>
+
+</body>
+
+</html>

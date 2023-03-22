@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<link rel="stylesheet" href="style2.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag Form</title>
+</head>
+
+<body>
+    <h1>Tag Form</h1>
+    <!-- Action é para onde irei mandar as informaçoes do formulario -->
+    <!-- Metodo Get envia pela url as info e o metodo Post envia criptografado pela requisiçao http -->
+
+    <form action="" method="get" name="form-cadastro">
+
+<!-- Label é como se fosse o rotulo do campo -->
+        <label for="nome">Nome</label>
+        <input type="text" name="Nome" id="nome">
+
+        <label for="sobrenome">Sobrenome</label>
+        <input type="text" name="Sobrenome" id="sobrenome"> <br>
+
+        <label for="email">E-mail</label>
+
+        <!-- Required faz aparecer a imagem "prencha este campo" deixando o usuario obrigado a digitar naquele campo-->
+        <input type="email" name="email" id="email" required>
+
+        <label for="senha">Senha</label>
+
+        <!-- Maxlength 8 senha max de caracteres -->
+        <input type="password" name="senha" id="senha" maxlength="8"> <br>
+
+        <label for="idade">idade</label>
+        <input type="number" name="idade" id="idade"> <br>
+
+        <label for="Nascimento">Data Nascimento</label>
+        <input type="date" name="data-nascimento" id="Nascimento"> <br>
+
+        <label for="avatar">Foto De Perfil</label>
+        <input type="file" name="foto-perfil" id="avatar" accept=".html,.jpg,.png"> <br>
+        <!-- accept serve para selecionar quais os tipos de arquivos que o usuario pode enviar -->
+        <!-- file serve para anexar arquivos -->
+        <!-- FieldSet faz uma caixinha ao redor -->
+        <fieldset>
+            <!-- Legend adciona uma legenda -->
+            <legend>Gênero</legend>
+            <input type="radio" name="genero" id="genero" id="Masculino"><label for="Masculino">Masculino</label>
+
+            <input type="radio" name="genero" id="genero" id="Feminino"><label for="Feminino">Feminino</label>
+            <!-- Utilizar Checked Dentro do input para quando carregar a página a opção já vir selecionada -->
+
+            <!-- Para a pessoa não selecionar mais de um radio deixar o name igual -->
+            <input type="radio" name="genero" id="genero" id="Outros"><label for="Outros">Outro</label>
+        </fieldset>
+
+
+        <input type="checkbox" name="contrato" id="contrato">
+        <!-- Checkbox faz uma caixa de seleção onde pode marcar e desmarcar  -->
+        <label for="contrato">Li e aceito os termos </label> <br>
+
+        <label for="cidade">cidade</label>
+        <select name="cidades" id="">
+            <option value="Barueri">Barueri</option>
+            <option value="Jandira" selected>Jandira</option>
+            <option value="Itapevi" disabled>Itapevi</option>
+            <option value="Osasco">Osasco</option>
+            <!-- Select name cria uma lista de coisas -->
+            <!-- Option você seleciona as opçoes da linha -->
+            <!-- Para duplicar linha alt+shit+seta para baixo -->
+            <!-- Se clicar a seta para cima ele duplica para cima -->
+
+            <!-- Selected deixa uma opção selecionada para usar é somente inserir dentro do option  -->
+            <!-- Para colocar arrumar a lista  utilizar alt+ seta para cima <<<< muda de lugar-->
+            <!-- Disabled desabilita uma opnião ou seja não deixa ela ser selecionada -->
+        </select><br>
+
+        <label for="observacoes">Observações</label> <br>
+        <textarea name="observacoes" id="observacoes" placeholder="Digite qualquer imformação importante"></textarea>
+        <br>
+        <!-- Placeholder serve para deixar uma descrição pode utilizar em qualquer input menos no radio e checkbox que não 
+        possuem um campo de digitar -->
+
+
+        <!-- Value muda o texto dentro do botão do submit -->
+        <input type="submit" value="Cadastrar">
+        <input type="reset" value="Limpar Tudo">
+        <!-- Usado para limpar todas as caixas -->
+
+
+
+
+
+
+    </form>
+</body>
+
+</html>

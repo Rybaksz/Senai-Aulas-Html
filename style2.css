@@ -1,0 +1,20 @@
+body, head{
+
+    background-color: rgb(110, 216, 49);
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(54, 165, 17);
+    color: #fff;
+    padding: 2px 5px;
+    box-shadow: 15px 10px 20px 1px rgb(82, 135, 13);
+  }
+  .navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 1p;
+    font-size: 15px;
+  }
+  
